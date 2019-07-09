@@ -32,6 +32,8 @@ $ curl -X POST -H 'Content-Type: application/json' -d '{ "title": "How do I make
 $ curl -X POST -H 'Content-Type: application/json' -d '{ "title": "What is React?", "description": "I have been hearing a lot about React. What is it?" }' localhost:8080
 
 $ curl localhost:8080
+
+$ curl -X POST -H 'Content-Type: application/json' -d '{ "answer": "Just spread butter on the bread, and that is it."}' localhost:8080/answer/1
 ```
 
 ## Frontend App
@@ -53,5 +55,5 @@ $ npm start
 **Installing the dependencies**
 
 ```
-$ npm i react-router react-router-dom
+$ npm i react-router react-router-dom axios
 ```
