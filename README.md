@@ -14,6 +14,8 @@ $ npm init -y
 
 ```
 $ npm i body-parser cors express helmet morgan
+# Authentication
+$ npm i express-jwt jwks-rsa
 ```
 
 **Running the server**
@@ -34,6 +36,8 @@ $ curl -X POST -H 'Content-Type: application/json' -d '{ "title": "What is React
 $ curl localhost:8080
 
 $ curl -X POST -H 'Content-Type: application/json' -d '{ "answer": "Just spread butter on the bread, and that is it."}' localhost:8080/answer/1
+
+$ curl localhost:8080/1
 ```
 
 ## Frontend App
@@ -56,4 +60,6 @@ $ npm start
 
 ```
 $ npm i react-router react-router-dom axios
+# Authentication
+$ npm install auth0-js
 ```
